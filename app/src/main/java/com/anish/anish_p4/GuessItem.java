@@ -2,11 +2,11 @@ package com.anish.anish_p4;
 
 public class GuessItem {
     private String guess;
-    private char[] correctGuesses;
-    private char[] incorrectPositions;
+    private int correctGuesses;
+    private int incorrectPositions;
     private char incorrectDigit;
 
-    public GuessItem(String guess, char[] correctGuesses, char[] incorrectPositions, char incorrectDigit) {
+    public GuessItem(String guess, int correctGuesses, int incorrectPositions, char incorrectDigit) {
         this.guess = guess;
         this.correctGuesses = correctGuesses;
         this.incorrectPositions = incorrectPositions;
@@ -17,11 +17,11 @@ public class GuessItem {
         return guess;
     }
 
-    public char[] getCorrectGuesses() {
+    public int getCorrectGuesses() {
         return correctGuesses;
     }
 
-    public char[] getIncorrectPositions() {
+    public int getIncorrectPositions() {
         return incorrectPositions;
     }
 

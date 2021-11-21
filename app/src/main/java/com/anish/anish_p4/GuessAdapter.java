@@ -33,8 +33,8 @@ public class GuessAdapter extends RecyclerView.Adapter<GuessAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         GuessItem m = guessList.get(position);
         holder.guess.setText(m.getGuess());
-        holder.correctDigits.setText(String.join(",", new String(m.getCorrectGuesses())));
-        holder.incorrectPositions.setText(String.join(",", new String(m.getIncorrectPositions())));
+        holder.correctDigits.setText(m.getCorrectGuesses()+"");
+        holder.incorrectPositions.setText(m.getIncorrectPositions()+"");
         holder.missingDigit.setText(Character.toString(m.getIncorrectDigit()));
         holder.guessItem = m;
     }
